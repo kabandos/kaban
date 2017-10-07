@@ -29,4 +29,16 @@ public class Utils {
 
         return Arrays.asList(sorted).indexOf(col);
     }
+    static String readLine() {
+        InputStreamReader isReader = new InputStreamReader(System.in);
+        BufferedReader bufferedReader = new BufferedReader(isReader);
+        String line = null;
+        try {
+            line = bufferedReader.readLine();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return line;
+    }
 }

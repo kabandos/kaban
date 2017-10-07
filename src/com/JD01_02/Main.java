@@ -1,5 +1,6 @@
 package com.JD01_02;
-
+import javax.swing.*;
+import java.util.Scanner;
 import java.io.IOException;
 
 public class Main {
@@ -19,9 +20,13 @@ public class Main {
         System.out.println("Srednee arifmeticheskoe ravno "+arifm);
         int povtor = TaskA.getPovtor(intMas);
         System.out.println("Povtori : "+povtor);
-
-
+        TaskB.massiv(25);
+       String a = JOptionPane.showInputDialog("Enter the month number");
+       // использовал здесь Joption потому что Scanner выдавал ошибку, из-за количества потоков, подозреваю
+       int n = Integer.parseInt(a);
+        TaskB.month(n);
     }
 
-
 }
+
+

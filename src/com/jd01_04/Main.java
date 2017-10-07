@@ -1,5 +1,6 @@
 package com.jd01_04;
 
+import javax.swing.*;
 import java.io.IOException;
 
 /**
@@ -22,5 +23,9 @@ public class Main {
         int lastIndex = Utils.calcIndex (sorted, cols[cols.length-1]);
         System.out.println("\nPerviy bil, stal: "+firstIndex);
         System.out.println("\nPosledniy bil, stal: "+lastIndex);
+
+
+
+
     }
 }
